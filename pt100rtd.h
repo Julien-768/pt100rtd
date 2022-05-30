@@ -24,11 +24,11 @@
 
 // refine conditional inclusion as per R.VanTwisk request.
 
-#if (defined(__AVR__) || defined(SAMD_SERIES))
+//#if (defined(__AVR__) || defined(SAMD_SERIES))
 #include <avr\pgmspace.h>
-#else
-#include <pgmspace.h>
-#endif
+//#else
+//#include <pgmspace.h>
+//#endif
 
 #if (ARDUINO >= 100)
 	#include "Arduino.h"   								
