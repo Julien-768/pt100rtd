@@ -24,7 +24,7 @@
 
 // refine conditional inclusion as per R.VanTwisk request.
 
-#if (defined(__AVR__))
+#if (defined(__AVR__) || defined(SAMD_SERIES))
 #include <avr\pgmspace.h>
 #else
 #include <pgmspace.h>
